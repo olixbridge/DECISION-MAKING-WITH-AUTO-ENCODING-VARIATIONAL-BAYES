@@ -56,12 +56,12 @@ def accept_reject(
     prob = torch.clamp_max(torch.exp(current_Hamil - propose_Hamil), 1.0)
 
     with torch.no_grad():
-        uniform_sample = torch.rand(prob.size())
-        accept = (prob > uniform_sample).float()
+        uniform_sample = torch.rand(prob.size()).cuda()
+        accept = (prob > uniform_sample).float().cuda()
         z = z.mul(accept.view(-1, 1)) + current_z.mul(1.0 - accept.view(-1, 1))
 
         accept_hist = accept_hist.add(accept)
-        criteria = (accept_hist / hist_len > 0.65).float()
+        criteria = (accept_hist / hist_len > 0.65).float().cuda()
         adapt = 1.02 * criteria + 0.98 * (1.0 - criteria)
         epsilon = epsilon.mul(adapt).clamp(1e-4, 0.5)
 

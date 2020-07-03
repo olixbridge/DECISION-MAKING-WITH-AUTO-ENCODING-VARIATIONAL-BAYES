@@ -37,7 +37,7 @@ def ais_trajectory(
     model = model.eval()
 
     prior_distribution = torch.distributions.Normal(
-        torch.zeros(n_latent), torch.ones(n_latent)
+        torch.zeros(n_latent, device="cuda"), torch.ones(n_latent, device="cuda")
     )
 
     def log_f_i(z, data, t):
@@ -61,12 +61,12 @@ def ais_trajectory(
 
         tensors = [safe_repeat(tens, n_sample) for tens in tensors]
         with torch.no_grad():
-            epsilon = torch.ones(B).mul_(0.01)###.cuda.mul
-            accept_hist = torch.zeros(B)
-            logw = torch.zeros(B)
+            epsilon = torch.ones(B).cuda().mul_(0.01)
+            accept_hist = torch.zeros(B).cuda()
+            logw = torch.zeros(B).cuda()
 
         # initial sample of z
-        current_z = torch.randn(B, n_latent)
+        current_z = torch.randn(B, n_latent).cuda()
         current_z = current_z.requires_grad_()
 
         for j, (t0, t1) in enumerate(zip(schedule[:-1], schedule[1:]), 1):
@@ -76,14 +76,14 @@ def ais_trajectory(
             logw += log_int_2 - log_int_1
 
             # resample velocity
-            current_v = torch.randn(current_z.size())
+            current_v = torch.randn(current_z.size()).cuda()
 
             def U(z):
                 return -log_f_i(z, tensors, t1)
 
             def grad_U(z):
                 # grad w.r.t. outputs; mandatory in this case
-                grad_outputs = torch.ones(B)
+                grad_outputs = torch.ones(B).cuda()
                 # torch.autograd.grad default returns volatile
                 grad = torchgrad(U(z), z, grad_outputs=grad_outputs)[0]
                 # clip by norm
@@ -93,7 +93,7 @@ def ais_trajectory(
                 return grad
 
             def normalized_kinetic(v):
-                zeros = torch.zeros(B, n_latent)
+                zeros = torch.zeros(B, n_latent).cuda()
                 return -log_normal(v, zeros, zeros)
 
             z, v = hmc_trajectory(current_z, current_v, U, grad_U, epsilon)
@@ -142,7 +142,7 @@ def ais_trajectory_sample(
     model = model.eval()
 
     prior_distribution = torch.distributions.Normal(
-        torch.zeros(n_latent), torch.ones(n_latent)
+        torch.zeros(n_latent, device="cuda"), torch.ones(n_latent, device="cuda")
     )
 
     def log_f_i(z, data, t):
@@ -161,12 +161,12 @@ def ais_trajectory_sample(
 
     tensors = [safe_repeat(tens, n_sample) for tens in tensors]
     with torch.no_grad():
-        epsilon = torch.ones(B).mul_(0.01)
-        accept_hist = torch.zeros(B)
-        logw = torch.zeros(B)
+        epsilon = torch.ones(B).cuda().mul_(0.01)
+        accept_hist = torch.zeros(B).cuda()
+        logw = torch.zeros(B).cuda()
 
     # initial sample of z
-    current_z = torch.randn(B, n_latent)
+    current_z = torch.randn(B, n_latent).cuda()
     current_z = current_z.requires_grad_()
 
     for j, (t0, t1) in enumerate(zip(tqdm(schedule[:-1]), schedule[1:]), 1):
@@ -176,14 +176,14 @@ def ais_trajectory_sample(
         logw += log_int_2 - log_int_1
 
         # resample velocity
-        current_v = torch.randn(current_z.size())
+        current_v = torch.randn(current_z.size()).cuda()
 
         def U(z):
             return -log_f_i(z, tensors, t1)
 
         def grad_U(z):
             # grad w.r.t. outputs; mandatory in this case
-            grad_outputs = torch.ones(B)
+            grad_outputs = torch.ones(B).cuda()
             # torch.autograd.grad default returns volatile
             grad = torchgrad(U(z), z, grad_outputs=grad_outputs)[0]
             # clip by norm
@@ -193,7 +193,7 @@ def ais_trajectory_sample(
             return grad
 
         def normalized_kinetic(v):
-            zeros = torch.zeros(B, n_latent)
+            zeros = torch.zeros(B, n_latent).cuda()
             return -log_normal(v, zeros, zeros)
 
         z, v = hmc_trajectory(current_z, current_v, U, grad_U, epsilon)

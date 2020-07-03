@@ -1,0 +1,176 @@
+	encoder_type	eval_encoder_name	experiment	learn_var	loss_gen	loss_wvar	model_name
+0	train	train	0	True	ELBO	['ELBO']	VAE
+1	['ELBO']	VAE	0	True	ELBO	['ELBO']	VAE
+2	['IWELBO']	IWAE	0	True	ELBO	['ELBO']	VAE
+3	['REVKL']	Forward KL	0	True	ELBO	['ELBO']	VAE
+4	['CUBO']	$\chi$	0	True	ELBO	['ELBO']	VAE
+5	['CUBO']	$\chi$ (St)	0	True	ELBO	['ELBO']	VAE
+6	['IWELBO', 'CUBO', 'REVKL']	MsbVAEB	0	True	ELBO	['ELBO']	VAE
+7	train	train	1	True	ELBO	['ELBO']	VAE
+8	['ELBO']	VAE	1	True	ELBO	['ELBO']	VAE
+9	['IWELBO']	IWAE	1	True	ELBO	['ELBO']	VAE
+10	['REVKL']	Forward KL	1	True	ELBO	['ELBO']	VAE
+11	['CUBO']	$\chi$	1	True	ELBO	['ELBO']	VAE
+12	['CUBO']	$\chi$ (St)	1	True	ELBO	['ELBO']	VAE
+13	['IWELBO', 'CUBO', 'REVKL']	MsbVAEB	1	True	ELBO	['ELBO']	VAE
+14	train	train	2	True	ELBO	['ELBO']	VAE
+15	['ELBO']	VAE	2	True	ELBO	['ELBO']	VAE
+16	['IWELBO']	IWAE	2	True	ELBO	['ELBO']	VAE
+17	['REVKL']	Forward KL	2	True	ELBO	['ELBO']	VAE
+18	['CUBO']	$\chi$	2	True	ELBO	['ELBO']	VAE
+19	['CUBO']	$\chi$ (St)	2	True	ELBO	['ELBO']	VAE
+20	['IWELBO', 'CUBO', 'REVKL']	MsbVAEB	2	True	ELBO	['ELBO']	VAE
+21	train	train	3	True	ELBO	['ELBO']	VAE
+22	['ELBO']	VAE	3	True	ELBO	['ELBO']	VAE
+23	['IWELBO']	IWAE	3	True	ELBO	['ELBO']	VAE
+24	['REVKL']	Forward KL	3	True	ELBO	['ELBO']	VAE
+25	['CUBO']	$\chi$	3	True	ELBO	['ELBO']	VAE
+26	['CUBO']	$\chi$ (St)	3	True	ELBO	['ELBO']	VAE
+27	['IWELBO', 'CUBO', 'REVKL']	MsbVAEB	3	True	ELBO	['ELBO']	VAE
+28	train	train	4	True	ELBO	['ELBO']	VAE
+29	['ELBO']	VAE	4	True	ELBO	['ELBO']	VAE
+30	['IWELBO']	IWAE	4	True	ELBO	['ELBO']	VAE
+31	['REVKL']	Forward KL	4	True	ELBO	['ELBO']	VAE
+32	['CUBO']	$\chi$	4	True	ELBO	['ELBO']	VAE
+33	['CUBO']	$\chi$ (St)	4	True	ELBO	['ELBO']	VAE
+34	['IWELBO', 'CUBO', 'REVKL']	MsbVAEB	4	True	ELBO	['ELBO']	VAE
+35	train	train	0	True	IWELBO	['IWELBO']	IWAE
+36	['ELBO']	VAE	0	True	IWELBO	['IWELBO']	IWAE
+37	['IWELBO']	IWAE	0	True	IWELBO	['IWELBO']	IWAE
+38	['REVKL']	Forward KL	0	True	IWELBO	['IWELBO']	IWAE
+39	['CUBO']	$\chi$	0	True	IWELBO	['IWELBO']	IWAE
+40	['CUBO']	$\chi$ (St)	0	True	IWELBO	['IWELBO']	IWAE
+41	['IWELBO', 'CUBO', 'REVKL']	MsbVAEB	0	True	IWELBO	['IWELBO']	IWAE
+42	train	train	1	True	IWELBO	['IWELBO']	IWAE
+43	['ELBO']	VAE	1	True	IWELBO	['IWELBO']	IWAE
+44	['IWELBO']	IWAE	1	True	IWELBO	['IWELBO']	IWAE
+45	['REVKL']	Forward KL	1	True	IWELBO	['IWELBO']	IWAE
+46	['CUBO']	$\chi$	1	True	IWELBO	['IWELBO']	IWAE
+47	['CUBO']	$\chi$ (St)	1	True	IWELBO	['IWELBO']	IWAE
+48	['IWELBO', 'CUBO', 'REVKL']	MsbVAEB	1	True	IWELBO	['IWELBO']	IWAE
+49	train	train	2	True	IWELBO	['IWELBO']	IWAE
+50	['ELBO']	VAE	2	True	IWELBO	['IWELBO']	IWAE
+51	['IWELBO']	IWAE	2	True	IWELBO	['IWELBO']	IWAE
+52	['REVKL']	Forward KL	2	True	IWELBO	['IWELBO']	IWAE
+53	['CUBO']	$\chi$	2	True	IWELBO	['IWELBO']	IWAE
+54	['CUBO']	$\chi$ (St)	2	True	IWELBO	['IWELBO']	IWAE
+55	['IWELBO', 'CUBO', 'REVKL']	MsbVAEB	2	True	IWELBO	['IWELBO']	IWAE
+56	train	train	3	True	IWELBO	['IWELBO']	IWAE
+57	['ELBO']	VAE	3	True	IWELBO	['IWELBO']	IWAE
+58	['IWELBO']	IWAE	3	True	IWELBO	['IWELBO']	IWAE
+59	['REVKL']	Forward KL	3	True	IWELBO	['IWELBO']	IWAE
+60	['CUBO']	$\chi$	3	True	IWELBO	['IWELBO']	IWAE
+61	['CUBO']	$\chi$ (St)	3	True	IWELBO	['IWELBO']	IWAE
+62	['IWELBO', 'CUBO', 'REVKL']	MsbVAEB	3	True	IWELBO	['IWELBO']	IWAE
+63	train	train	4	True	IWELBO	['IWELBO']	IWAE
+64	['ELBO']	VAE	4	True	IWELBO	['IWELBO']	IWAE
+65	['IWELBO']	IWAE	4	True	IWELBO	['IWELBO']	IWAE
+66	['REVKL']	Forward KL	4	True	IWELBO	['IWELBO']	IWAE
+67	['CUBO']	$\chi$	4	True	IWELBO	['IWELBO']	IWAE
+68	['CUBO']	$\chi$ (St)	4	True	IWELBO	['IWELBO']	IWAE
+69	['IWELBO', 'CUBO', 'REVKL']	MsbVAEB	4	True	IWELBO	['IWELBO']	IWAE
+70	train	train	0	True	IWELBO	['REVKL']	WW
+71	['ELBO']	VAE	0	True	IWELBO	['REVKL']	WW
+72	['IWELBO']	IWAE	0	True	IWELBO	['REVKL']	WW
+73	['REVKL']	Forward KL	0	True	IWELBO	['REVKL']	WW
+74	['CUBO']	$\chi$	0	True	IWELBO	['REVKL']	WW
+75	['CUBO']	$\chi$ (St)	0	True	IWELBO	['REVKL']	WW
+76	['IWELBO', 'CUBO', 'REVKL']	MsbVAEB	0	True	IWELBO	['REVKL']	WW
+77	train	train	1	True	IWELBO	['REVKL']	WW
+78	['ELBO']	VAE	1	True	IWELBO	['REVKL']	WW
+79	['IWELBO']	IWAE	1	True	IWELBO	['REVKL']	WW
+80	['REVKL']	Forward KL	1	True	IWELBO	['REVKL']	WW
+81	['CUBO']	$\chi$	1	True	IWELBO	['REVKL']	WW
+82	['CUBO']	$\chi$ (St)	1	True	IWELBO	['REVKL']	WW
+83	['IWELBO', 'CUBO', 'REVKL']	MsbVAEB	1	True	IWELBO	['REVKL']	WW
+84	train	train	2	True	IWELBO	['REVKL']	WW
+85	['ELBO']	VAE	2	True	IWELBO	['REVKL']	WW
+86	['IWELBO']	IWAE	2	True	IWELBO	['REVKL']	WW
+87	['REVKL']	Forward KL	2	True	IWELBO	['REVKL']	WW
+88	['CUBO']	$\chi$	2	True	IWELBO	['REVKL']	WW
+89	['CUBO']	$\chi$ (St)	2	True	IWELBO	['REVKL']	WW
+90	['IWELBO', 'CUBO', 'REVKL']	MsbVAEB	2	True	IWELBO	['REVKL']	WW
+91	train	train	3	True	IWELBO	['REVKL']	WW
+92	['ELBO']	VAE	3	True	IWELBO	['REVKL']	WW
+93	['IWELBO']	IWAE	3	True	IWELBO	['REVKL']	WW
+94	['REVKL']	Forward KL	3	True	IWELBO	['REVKL']	WW
+95	['CUBO']	$\chi$	3	True	IWELBO	['REVKL']	WW
+96	['CUBO']	$\chi$ (St)	3	True	IWELBO	['REVKL']	WW
+97	['IWELBO', 'CUBO', 'REVKL']	MsbVAEB	3	True	IWELBO	['REVKL']	WW
+98	train	train	4	True	IWELBO	['REVKL']	WW
+99	['ELBO']	VAE	4	True	IWELBO	['REVKL']	WW
+100	['IWELBO']	IWAE	4	True	IWELBO	['REVKL']	WW
+101	['REVKL']	Forward KL	4	True	IWELBO	['REVKL']	WW
+102	['CUBO']	$\chi$	4	True	IWELBO	['REVKL']	WW
+103	['CUBO']	$\chi$ (St)	4	True	IWELBO	['REVKL']	WW
+104	['IWELBO', 'CUBO', 'REVKL']	MsbVAEB	4	True	IWELBO	['REVKL']	WW
+105	train	train	0	True	IWELBO	['CUBO']	$\chi$
+106	['ELBO']	VAE	0	True	IWELBO	['CUBO']	$\chi$
+107	['IWELBO']	IWAE	0	True	IWELBO	['CUBO']	$\chi$
+108	['REVKL']	Forward KL	0	True	IWELBO	['CUBO']	$\chi$
+109	['CUBO']	$\chi$	0	True	IWELBO	['CUBO']	$\chi$
+110	['CUBO']	$\chi$ (St)	0	True	IWELBO	['CUBO']	$\chi$
+111	['IWELBO', 'CUBO', 'REVKL']	MsbVAEB	0	True	IWELBO	['CUBO']	$\chi$
+112	train	train	1	True	IWELBO	['CUBO']	$\chi$
+113	['ELBO']	VAE	1	True	IWELBO	['CUBO']	$\chi$
+114	['IWELBO']	IWAE	1	True	IWELBO	['CUBO']	$\chi$
+115	['REVKL']	Forward KL	1	True	IWELBO	['CUBO']	$\chi$
+116	['CUBO']	$\chi$	1	True	IWELBO	['CUBO']	$\chi$
+117	['CUBO']	$\chi$ (St)	1	True	IWELBO	['CUBO']	$\chi$
+118	['IWELBO', 'CUBO', 'REVKL']	MsbVAEB	1	True	IWELBO	['CUBO']	$\chi$
+119	train	train	2	True	IWELBO	['CUBO']	$\chi$
+120	['ELBO']	VAE	2	True	IWELBO	['CUBO']	$\chi$
+121	['IWELBO']	IWAE	2	True	IWELBO	['CUBO']	$\chi$
+122	['REVKL']	Forward KL	2	True	IWELBO	['CUBO']	$\chi$
+123	['CUBO']	$\chi$	2	True	IWELBO	['CUBO']	$\chi$
+124	['CUBO']	$\chi$ (St)	2	True	IWELBO	['CUBO']	$\chi$
+125	['IWELBO', 'CUBO', 'REVKL']	MsbVAEB	2	True	IWELBO	['CUBO']	$\chi$
+126	train	train	3	True	IWELBO	['CUBO']	$\chi$
+127	['ELBO']	VAE	3	True	IWELBO	['CUBO']	$\chi$
+128	['IWELBO']	IWAE	3	True	IWELBO	['CUBO']	$\chi$
+129	['REVKL']	Forward KL	3	True	IWELBO	['CUBO']	$\chi$
+130	['CUBO']	$\chi$	3	True	IWELBO	['CUBO']	$\chi$
+131	['CUBO']	$\chi$ (St)	3	True	IWELBO	['CUBO']	$\chi$
+132	['IWELBO', 'CUBO', 'REVKL']	MsbVAEB	3	True	IWELBO	['CUBO']	$\chi$
+133	train	train	4	True	IWELBO	['CUBO']	$\chi$
+134	['ELBO']	VAE	4	True	IWELBO	['CUBO']	$\chi$
+135	['IWELBO']	IWAE	4	True	IWELBO	['CUBO']	$\chi$
+136	['REVKL']	Forward KL	4	True	IWELBO	['CUBO']	$\chi$
+137	['CUBO']	$\chi$	4	True	IWELBO	['CUBO']	$\chi$
+138	['CUBO']	$\chi$ (St)	4	True	IWELBO	['CUBO']	$\chi$
+139	['IWELBO', 'CUBO', 'REVKL']	MsbVAEB	4	True	IWELBO	['CUBO']	$\chi$
+140	train	train	0	True	IWELBO	['CUBO']	$\chi$ (St)
+141	['ELBO']	VAE	0	True	IWELBO	['CUBO']	$\chi$ (St)
+142	['IWELBO']	IWAE	0	True	IWELBO	['CUBO']	$\chi$ (St)
+143	['REVKL']	Forward KL	0	True	IWELBO	['CUBO']	$\chi$ (St)
+144	['CUBO']	$\chi$	0	True	IWELBO	['CUBO']	$\chi$ (St)
+145	['CUBO']	$\chi$ (St)	0	True	IWELBO	['CUBO']	$\chi$ (St)
+146	['IWELBO', 'CUBO', 'REVKL']	MsbVAEB	0	True	IWELBO	['CUBO']	$\chi$ (St)
+147	train	train	1	True	IWELBO	['CUBO']	$\chi$ (St)
+148	['ELBO']	VAE	1	True	IWELBO	['CUBO']	$\chi$ (St)
+149	['IWELBO']	IWAE	1	True	IWELBO	['CUBO']	$\chi$ (St)
+150	['REVKL']	Forward KL	1	True	IWELBO	['CUBO']	$\chi$ (St)
+151	['CUBO']	$\chi$	1	True	IWELBO	['CUBO']	$\chi$ (St)
+152	['CUBO']	$\chi$ (St)	1	True	IWELBO	['CUBO']	$\chi$ (St)
+153	['IWELBO', 'CUBO', 'REVKL']	MsbVAEB	1	True	IWELBO	['CUBO']	$\chi$ (St)
+154	train	train	2	True	IWELBO	['CUBO']	$\chi$ (St)
+155	['ELBO']	VAE	2	True	IWELBO	['CUBO']	$\chi$ (St)
+156	['IWELBO']	IWAE	2	True	IWELBO	['CUBO']	$\chi$ (St)
+157	['REVKL']	Forward KL	2	True	IWELBO	['CUBO']	$\chi$ (St)
+158	['CUBO']	$\chi$	2	True	IWELBO	['CUBO']	$\chi$ (St)
+159	['CUBO']	$\chi$ (St)	2	True	IWELBO	['CUBO']	$\chi$ (St)
+160	['IWELBO', 'CUBO', 'REVKL']	MsbVAEB	2	True	IWELBO	['CUBO']	$\chi$ (St)
+161	train	train	3	True	IWELBO	['CUBO']	$\chi$ (St)
+162	['ELBO']	VAE	3	True	IWELBO	['CUBO']	$\chi$ (St)
+163	['IWELBO']	IWAE	3	True	IWELBO	['CUBO']	$\chi$ (St)
+164	['REVKL']	Forward KL	3	True	IWELBO	['CUBO']	$\chi$ (St)
+165	['CUBO']	$\chi$	3	True	IWELBO	['CUBO']	$\chi$ (St)
+166	['CUBO']	$\chi$ (St)	3	True	IWELBO	['CUBO']	$\chi$ (St)
+167	['IWELBO', 'CUBO', 'REVKL']	MsbVAEB	3	True	IWELBO	['CUBO']	$\chi$ (St)
+168	train	train	4	True	IWELBO	['CUBO']	$\chi$ (St)
+169	['ELBO']	VAE	4	True	IWELBO	['CUBO']	$\chi$ (St)
+170	['IWELBO']	IWAE	4	True	IWELBO	['CUBO']	$\chi$ (St)
+171	['REVKL']	Forward KL	4	True	IWELBO	['CUBO']	$\chi$ (St)
+172	['CUBO']	$\chi$	4	True	IWELBO	['CUBO']	$\chi$ (St)
+173	['CUBO']	$\chi$ (St)	4	True	IWELBO	['CUBO']	$\chi$ (St)
+174	['IWELBO', 'CUBO', 'REVKL']	MsbVAEB	4	True	IWELBO	['CUBO']	$\chi$ (St)
